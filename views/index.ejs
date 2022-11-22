@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fav Surf Spots</title>
+</head>
+<body>
+    <h1>Spots Ella Has Surfed & You Should Too!!</h1>
+
+    <nav>
+        <a href="/surfspots/new">Add a Spot</a>
+    </nav>
+    <h4>
+        <% for (let i=0; i < surfSpots.length; i++){ %>
+            <li> 
+        <a href="/surfspots/<%=surfSpots[i].id%>">
+            <%=surfSpots[i].name; %>
+        </a>
+        <% } %>
+        </li>
+        
+    </h4>
+</body>
+</html>
+
+<!-- if you want an unordered list make the for loop
+outside the li tags -->
