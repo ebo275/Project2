@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><%= foundSpot.name %></title>
 </head>
 <body>
-    <div>
-        <h1><%=foundSpot.name %></h1>
-        <img src="<%=foundSpot.image %>">
-        <h3>Description: <%= foundSpot.description %></h3>
+    <h1>
+        <%= spot.name %> 
+    </h1>
+
+    <p><img src="<%= spot.image %>"></p>
+    
+    
+    <ul>
+        <li><%= spot.coordinates %> </li>
+        <li><%= spot.description %> </li>
+        <li><%= spot.idealConditions %> </li>
+        <li><%= spot.quiverSelection %> </li>
+        <li>
+            <a href="<%=spot.checkTheCam%>">
+            Check the Cam
+            </a>
+        </li>
 
 
 
-    </div>
+
+    </ul>
 </body>
 </html>

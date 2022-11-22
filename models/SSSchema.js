@@ -1,17 +1,17 @@
 const mongoose = require('mongoose')
 
-const Schema = mongoose.Schema
 
-const surfSchema = new Schema({
-    name: {type: String},
-    coordinates: {type: String},
-    description:{type: String},
-    idealConditions: {type: String},
-    quiverSelection: [{type: String}],
-    checkTheCam: {type: String},
-    img: {type: String}
+const surfSchema = new mongoose.Schema({
+    name: String,
+    image: String,
+    coordinates: String,
+    description: String,
+    idealConditions: String,
+    quiverSelection: [String],
+    checkTheCam: String,
+    
 
 })
 
-const SurfSpot = mongoose.model('SurfSpot', surfSchema)
-module.exports = SurfSpot
+const SurfingSpot = mongoose.model('SurfingSpot', surfSchema)
+module.exports = SurfingSpot
