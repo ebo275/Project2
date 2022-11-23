@@ -15,9 +15,17 @@ const SurfSchema = require('./models/SurfSpots.js');
 
 
 
+// SEED
+// app.get('/surfspots/seed', (req, res) => {
+//     SurfingSpot.create(SurfSchema, (err, data) => {
+//         console.log('surf spots seeded')
+//         res.redirect('/surfspots')
+//     })
+// })
+
 //GET ROUTES
 
-
+//CREATE ROUTE
 app.get('/surfspots/new', (req, res)=>{
     res.render('create.ejs')
 })
@@ -42,7 +50,7 @@ app.get('/surfspots', (req, res) => {
 
 app.post('/surfspots/new', (req, res) => {
     SurfingSpot.create(req.body, (err, data) => {
-        console.log('this shit is working')
+        console.log(req.body)
         res.redirect('/surfspots')
     })
 })
@@ -57,14 +65,25 @@ app.get('/surfspots/:id', (req, res) => {
     })
 })
 
+//EDIT ROUTE
+app.get('/surfspots/:id/edit', (req, res) => {
+    SurfingSpot.findById(req.params.id, (err, chosenSpot) => {
+        res.render('edit.ejs', {
+            spot: chosenSpot
+        })
+    })
+})
+//ACTION FOR THE EDIT ROUTE
+app.put('/surfspots/:id', (req, res) => {
+    SurfingSpot.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedSpot) => {
+        res.redirect('/surfspots')
+    })
+})
 
 
-
-
-// SEED
-app.get('/surfspots/seed', (req, res) => {
-    SurfingSpot.create(SurfSchema, (err, data) => {
-        console.log('surf spots seeded')
+//DELETE
+app.delete('/surfspots/:id', (req, res) => {
+    SurfingSpot.findByIdAndRemove(req.params.id, (err, data) => {
         res.redirect('/surfspots')
     })
 })

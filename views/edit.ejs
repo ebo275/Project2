@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/surfspots/<%=spot._id%>?_method=PUT" method="POST">
+
+        Name: <input type="text" name="name" value="<%= spot.name %> "  /><br/>
+        Image: <input type="text" name="image" value="<%= spot.image %>"/><br/>
+        Coordinates: <input type="text" name="coordinates" value="<%= spot.coordinates %>"/><br/>
+        Description: <input type="text" name="description" value="<%= spot.description %> "/><br/>
+        Ideal Conditions: <input type="text" name="idealConditions" value="<%= spot.idealConditions %>"/><br/>
+        Quiver Selection: <input type="text" name="quiverSelection" value="<%= spot.quiverSelection %>"/><br/>
+        Surfline Link: <input type="text" name="checkTheCam" value="<%= spot.checkTheCam %>"/><br/>
+
+        <input type="submit" value="Edit Spot" />
+    
+</form>
+</body>
+</html>

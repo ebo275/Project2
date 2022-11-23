@@ -43,7 +43,7 @@ module.exports = [
     },
     {
         name: "Ocenside Pier North",
-        image: "https://www.eventsantacruz.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-16-at-11.36.00-AM.jpg",
+        image: "https://www.oceansidechamber.com/uploads/4/4/5/3/44535401/24286474319-fe77fd073f-k_orig.jpg",
         coordinates: '33.194672, -117.385201',
         description: "Although sandbars move and shift along this stretch continually, there are consistent breaks on the north end at the harbor's north and south jetties, and on both sides of the pier. These spots will most often have a crew of surfers on them, but, on better days, the peaks up and down the beach will be just as good. Oceanside is angled to receive southwest swells more readily than the beaches of central San Diego County, and, during southwest swells, it attracts surfers from all parts of SD.",
         idealConditions: 'The best time of year for surfing Oceanside Pier with consistent clean waves (rideable swell with light / offshore winds) is during Winter and most often the month of November. Clean surfable waves are typically found 58% of the time in November while 39% of the time it tends to be blown out. For the remaining 3% of the time it is considered too small by most surfers but may still be OK for beginners and groms at times.',

@@ -19,12 +19,22 @@
         <li><%= spot.description %> </li>
         <li><%= spot.idealConditions %> </li>
         <li><%= spot.quiverSelection %> </li>
+        <li><%= spot._id %> </li>
         <li>
             <a href="<%=spot.checkTheCam%>">
             Check the Cam
             </a>
         </li>
-
+        <li>
+            <a href="/surfspots/<%= spot.id %>/edit ">Update Spot</a>
+        </li>
+        <li>
+            <a href="/surfspots/<%spot.id%>">
+            <form action="/surfspots/<%=spot.id%>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE THIS SPOT">
+            </form>
+        </a>
+        </li>
 
 
 
