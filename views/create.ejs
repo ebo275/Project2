@@ -4,21 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Add A Spot</title>
 </head>
+<header>
+    <%- include('./partials/navbar.ejs') %> 
+</header>
 <body>
+
+    <h2>ADD A SPOT</h2>
+
     <form action="/surfspots/new" method="POST">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Spot Name</label>
+          <input type="text" name="name" class="form-control" id="exampleFormControlInput1" >
+        </div>
 
-            Name: <input type="text" name="name"  /><br/>
-            Image: <input type="text" name="image" /><br/>
-            Coordinates: <input type="text" name="coordinates" /><br/>
-            Description: <input type="text" name="description" /><br/>
-            Ideal Conditions: <input type="text" name="idealConditions" /><br/>
-            Quiver Selection: <input type="text" name="quiverSelection" /><br/>
-            Surfline Link: <input type="text" name="checkTheCam" /><br/>
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Image</label>
+            <input type="text" name="image" class="form-control" id="exampleFormControlInput2" >
+        </div>
 
-            <input type="submit" value="Add Spot" />
+        <div class="form-group">
+            <label for="exampleFormControlInput3">Coordinates</label>
+            <input type="text" name="coordinates" class="form-control" id="exampleFormControlInput3" >
+        </div>
         
-    </form>
+        <div class="form-group">
+            <label for="exampleFormControlInput4">Description</label>
+            <input type="text" name="description" class="form-control" id="exampleFormControlInput4" >
+        </div>
+        
+        <div class="form-group">
+            <label for="exampleFormControlInput5">Ideal Conditions</label>
+            <input type="text" name="idealConditions" class="form-control" id="exampleFormControlInput5" >
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput6">Quiver Selection</label>
+            <input type="text" name="quiverSelection" class="form-control" id="exampleFormControlInput6" >
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput7">Surfline <Link></Link></label>
+            <input type="text" name="checkTheCam" class="form-control" id="exampleFormControlInput7" >
+        </div>
+        
+        <input type="submit" value="Add a Spot">
+      </form>
 </body>
 </html>
+
+
