@@ -8,6 +8,7 @@ const surfSchema = new mongoose.Schema({
     description: String,
     idealConditions: String,
     quiverSelection: [String],
+    googleMap: String,
     checkTheCam: String,
     
 

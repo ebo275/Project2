@@ -5,14 +5,14 @@ $(()=> {
         const $addModal = $('#add-modal')
 
         const modalSlide = () => {
-                $addModal.css('display', 'flex')
+                $addModal.css('display', 'block')
         }
 
         const modalHide = () => {
                 $addModal.css('display', 'none')
         }
 
-        $addBtn.mouseover(modalSlide)
+        $addBtn.on('mouseover', modalSlide)
+        $('body').on('click', modalHide)
         
     })
-    
