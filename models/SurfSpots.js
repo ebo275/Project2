@@ -140,7 +140,7 @@ module.exports = [
         description: "Cardiff Reef in San Diego County is an exposed reef break that is usually a safe bet. Winter is the best time of year for surfing here. The best wind direction is from the east. Groundswells more frequent than windswells and the ideal swell angle is from the west northwest. Both left (best) and right reef breaks.. Good surf at all stages of the tide. Sometimes crowded. Watch out for crowds and rocks.",
         idealConditions: 'The best time of year for surfing Cardiff Reef with consistent clean waves (rideable swell with light / offshore winds) is during Winter and most often the month of January. Clean surfable waves are typically found 47% of the time in January while 31% of the time it tends to be blown out. For the remaining 22% of the time it is considered too small by most surfers but may still be OK for beginners and groms at times.',
         quiverSelection: 'Log, Funboard, Shortboard',
-        googleMap: "https://goo.gl/maps/2mKUUK2fuSCJuitU9",
+        googleMap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26764.510011360675!2d-117.2935044!3d33.0152751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc0ebaa8e97cdf%3A0xe400727f91c35ee5!2sCardiff%20State%20Beach!5e0!3m2!1sen!2sus!4v1669604787478!5m2!1sen!2sus",
         checkTheCam: 'https://www.surfline.com/surf-report/cardiff-reef-north/5ecd3fb73be5ff93e88736b5?camId=5ecd3657bc393a809da225e8',
 
     },

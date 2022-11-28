@@ -30,14 +30,16 @@
         <li><%= spot.description %> </li>
         <li><%= spot.idealConditions %> </li>
         <li><%= spot.quiverSelection %> </li>
+       <li>
+            <iframe src= "<%= spot.googleMap%>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </li>  
+        
         <li>
             <a href="<%=spot.checkTheCam%>">
             Check the Cam
             </a>
         </li>
-        <li>
-            <iframe src= "<%= spot.googleMap%>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </li>
+       
         <li>
             <a href="/surfspots/<%= spot.id %>/edit ">Update Spot</a>
         </li>
